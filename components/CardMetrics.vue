@@ -40,7 +40,7 @@
         <h4>{{ data.number }}</h4>
 
         <p>
-          <span>
+          <span :class="{ red: !data.positive }">
             <!-- percentage inc/dec -->
             <svg
               width="14"
@@ -231,7 +231,10 @@ export default {
       span {
         text-align: center;
         color: #027a48;
-        // color: #B42318;
+
+        &.red {
+          color: #b42318;
+        }
       }
     }
   }

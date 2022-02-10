@@ -34,10 +34,6 @@ a {
 .container {
   max-width: 90vw;
   margin: 0 auto;
-
-  @media (max-width: 1024px) {
-    max-width: 95vw;
-  }
 }
 
 button,

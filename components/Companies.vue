@@ -75,7 +75,6 @@ table {
 
 th {
   padding: 12px 24px;
-  // height: 44px;
   background: #ffffff;
   font-weight: 500;
   font-size: 12px;
@@ -85,7 +84,9 @@ th {
 
   &.dropdown-icon {
     padding-right: 0;
+    cursor: pointer;
   }
+  
   &.company {
     padding-left: 0;
     left: 0;
