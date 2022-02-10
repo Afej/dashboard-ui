@@ -252,7 +252,7 @@
           <li>
             <a href="#"> Home </a>
           </li>
-          <li>
+          <li class="active">
             <a href="#"> Dashboard </a>
           </li>
           <li>
@@ -408,6 +408,10 @@ header {
   height: 72px;
   gap: 20px;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    gap: 5px;
+  }
 }
 
 .logo {
@@ -426,11 +430,7 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
-
-  @media (max-width: 1024px) {
-    gap: 5px;
-  }
+  // gap: 16px;
 
   @media (max-width: 768px) {
     display: none;
@@ -438,6 +438,16 @@ header {
 
   li {
     margin: 0 12px;
+    padding: 8px 12px;
+
+    &.active {
+      background: #f9fafb;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 1024px) {
+      margin: 0;
+    }
   }
 
   a {
@@ -470,11 +480,14 @@ header {
     box-sizing: border-box;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     color: #344054;
+  }
+
+  span {
+    cursor: pointer;
   }
 }
 

@@ -44,23 +44,24 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #eee;
-  width: 16px;
-  height: 16px;
+  background-color: #f9f5ff;
+  width: 20px;
+  height: 20px;
   background: #fff;
-  border-radius: 4px;
-  border: 1px solid #ddd;
+  border-radius: 6px;
+  border: 1px solid #7f56d9;
   cursor: pointer;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  /* background-color: #ccc; */
+  background: #FFFFFF;
 }
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background: #635cff;
+  background: #7f56d9;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
