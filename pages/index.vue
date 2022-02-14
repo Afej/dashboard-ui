@@ -419,6 +419,7 @@ main {
 
         .tags {
           display: flex;
+          gap: 12px;
         }
 
         .filter-btn {
@@ -461,6 +462,7 @@ main {
     border-radius: 8px;
     width: 100%;
     overflow-x: auto;
+    position: relative;
 
     .pagination {
       display: flex;
@@ -468,6 +470,13 @@ main {
       justify-content: space-between;
       height: 66px;
       padding: 24px;
+
+      @media (max-width: 768px) {
+        position: sticky;
+
+        left: 0;
+        bottom: 0;
+      }
 
       .back,
       .forward {
